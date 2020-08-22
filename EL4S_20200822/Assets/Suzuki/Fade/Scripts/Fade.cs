@@ -29,6 +29,8 @@ public class Fade : MonoBehaviour
 {
 	IFade fade;
 
+
+    public bool m_FadeEnd;
 	void Start ()
 	{
 		Init ();
@@ -41,7 +43,8 @@ public class Fade : MonoBehaviour
 	void Init ()
 	{
 		fade = GetComponent<IFade> ();
-	}
+        m_FadeEnd = false;
+    }
 
 	void OnValidate ()
 	{
@@ -63,7 +66,10 @@ public class Fade : MonoBehaviour
 		cutoutRange = 0;
 		fade.Range = cutoutRange;
 
-		if(sceneName != null)
+        m_FadeEnd = true;
+
+
+        if (sceneName != null)
         {
 			SceneManager.LoadScene(sceneName);
         }
@@ -86,7 +92,7 @@ public class Fade : MonoBehaviour
 		if (sceneName != null)
 		{
 			SceneManager.LoadScene(sceneName);
-			FadeOut(2.0f,null);
+			FadeOut(1.0f,null);
 		}
 	}
 
