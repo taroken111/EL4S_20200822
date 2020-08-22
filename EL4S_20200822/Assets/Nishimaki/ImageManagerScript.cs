@@ -43,7 +43,12 @@ public class ImageManagerScript : MonoBehaviour
 
     public void ChangeColor()
     {
-        CurrentColor = Random.Range(0, ColorNum);
+        int newColor = CurrentColor;
+        while(CurrentColor == newColor)
+        {
+            newColor = Random.Range(0, ColorNum);
+        }
+        CurrentColor = newColor;
         LetterColor = Random.Range(0, ColorNum);
         spriteRenderer.sprite = ColorImage[CurrentColor];
 
