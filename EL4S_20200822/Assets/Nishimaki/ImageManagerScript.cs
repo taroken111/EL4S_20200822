@@ -56,10 +56,10 @@ public class ImageManagerScript : MonoBehaviour
                 spriteRenderer.color = new Color(0, 0, 1, 1); // 青
                 break;
             case 2:
-                spriteRenderer.color = new Color(0, 1, 0, 1); // 黄色
+                spriteRenderer.color = new Color(1, 1, 0, 1); // 黄色
                 break;
             case 3:
-                spriteRenderer.color = new Color(1, 1, 0, 1); // 緑
+                spriteRenderer.color = new Color(0, 1, 0, 1); // 緑
                 break;
 
 
