@@ -8,9 +8,12 @@ public class ToTitleScript : MonoBehaviour
     [SerializeField]
     private Button m_TitleButton;
 
+    private Fade m_Fade;
+
     // Start is called before the first frame update
     void Start()
     {
+        m_Fade = FindObjectOfType<Fade>();
         //! 押したら実行する関数を設定
         m_TitleButton.onClick.AddListener(Title);
     }
@@ -18,6 +21,7 @@ public class ToTitleScript : MonoBehaviour
     void Title()
     {
         //! タイトルへ遷移
-        SceneManager.LoadScene("TitleScene");
+        m_Fade.FadeIn(2.0f, "TitleScene");
+        //SceneManager.LoadScene("TitleScene");
     }
 }

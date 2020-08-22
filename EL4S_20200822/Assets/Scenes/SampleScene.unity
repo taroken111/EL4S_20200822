@@ -351,6 +351,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1244490847371386575, guid: da7a9081f37c91246813d912411169d6,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1244490848103666146, guid: da7a9081f37c91246813d912411169d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -461,5 +466,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameUI
       objectReference: {fileID: 0}
+    - target: {fileID: 1244490849017713518, guid: da7a9081f37c91246813d912411169d6,
+        type: 3}
+      propertyPath: m_FontData.m_Font
+      value: 
+      objectReference: {fileID: 12800000, guid: 64f60637b81b4974ca49685649f43e3d,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da7a9081f37c91246813d912411169d6, type: 3}
