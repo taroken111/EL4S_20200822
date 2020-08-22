@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 1560803449942938742}
   - component: {fileID: 1560803449942938743}
   m_Layer: 0
-  m_Name: New Sprite
+  m_Name: ColorSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -97,5 +97,5 @@ MonoBehaviour:
   ColorImage:
   - {fileID: 21300000, guid: 015048fb826c57c4dbb05b06f4140236, type: 3}
   - {fileID: 21300000, guid: 23c6e331e6e94f745af6ea0ffdea36e4, type: 3}
-  - {fileID: 21300000, guid: 531300191973d6c458b9d4911dfb252b, type: 3}
   - {fileID: 21300000, guid: c76659c35be17ea45b3ed22d08c6dffa, type: 3}
+  - {fileID: 21300000, guid: 531300191973d6c458b9d4911dfb252b, type: 3}
