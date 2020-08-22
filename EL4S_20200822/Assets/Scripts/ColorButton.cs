@@ -25,5 +25,6 @@ public class ColorButton : MonoBehaviour
     public void OnClick()
     {
         if (selector) selector.CompAnswer(type);
+        SoundManager.Instance.PlaySe(SeTable.Entity.GetSE("Select"), 1f);
     }
 }

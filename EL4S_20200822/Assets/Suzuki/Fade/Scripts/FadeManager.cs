@@ -18,7 +18,7 @@ public class FadeManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            fade.FadeIn(2.0f,"FujiiTest");
+            fade.FadeIn(1.0f,"FujiiTest");
         }
     }
 
