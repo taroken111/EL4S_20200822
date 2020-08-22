@@ -15,6 +15,8 @@ public class ColorSelector : MonoBehaviour
     //現在表示している文字オブジェクト
     [SerializeField]
     private ImageManagerScript IMS = null;
+    [SerializeField]
+    private GameUIScript GUS = null;
 
     private void Start()
     {
@@ -55,6 +57,7 @@ public class ColorSelector : MonoBehaviour
     void Correct()
     {
         Debug.Log("正解!!");
+        GUS.m_CorrectNum++;
     }
 
     /*
