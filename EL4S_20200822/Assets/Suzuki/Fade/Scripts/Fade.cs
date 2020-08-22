@@ -86,7 +86,7 @@ public class Fade : MonoBehaviour
 		if (sceneName != null)
 		{
 			SceneManager.LoadScene(sceneName);
-			FadeOut(1.0f,null);
+			FadeOut(2.0f,null);
 		}
 	}
 
