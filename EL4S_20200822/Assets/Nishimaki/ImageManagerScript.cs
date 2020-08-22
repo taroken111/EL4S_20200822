@@ -21,6 +21,7 @@ public class ImageManagerScript : MonoBehaviour
     {
         ColorNum = ColorImage.Length;
         spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        SoundManager.Instance.PlayBgm(BgmTable.Entity.GetBGM(1));
 
         ChangeColor();
     }
