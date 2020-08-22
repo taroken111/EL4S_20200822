@@ -718,10 +718,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 478534284229014078}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 303.3139, y: 244.45676, z: -28.939314}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 478534283703298537}
+  - {fileID: 8394624688420204841}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -738,6 +739,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ColorMode: 0
+  IMS: {fileID: 8394624688420204847}
 --- !u!1 &478534284252572054
 GameObject:
   m_ObjectHideFlags: 0
@@ -1039,3 +1041,90 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "\u7DD1"
+--- !u!1001 &7050003525825144152
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 478534284229014077}
+    m_Modifications:
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1560803449942938740, guid: e83508f6a97086c4c913489bfb50f14f,
+        type: 3}
+      propertyPath: m_Name
+      value: ColorSprite
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e83508f6a97086c4c913489bfb50f14f, type: 3}
+--- !u!4 &8394624688420204841 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1560803449942938737, guid: e83508f6a97086c4c913489bfb50f14f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7050003525825144152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8394624688420204847 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1560803449942938743, guid: e83508f6a97086c4c913489bfb50f14f,
+    type: 3}
+  m_PrefabInstance: {fileID: 7050003525825144152}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4530efd78e1e48842af53dc4f8bcaafd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -12,15 +12,23 @@ public class ColorSelector : MonoBehaviour
     private ColorType CorrectString = ColorType.RED;
     //正解の色
     private ColorType CorrectColor = ColorType.RED;
+    //現在表示している文字オブジェクト
+    [SerializeField]
+    private ImageManagerScript IMS = null;
+
+    private void Start()
+    {
+        SetCorrectAnswer();
+    }
 
     /*
      * @fn SetCorrectAnswer
      * @brief 正解の文字と色をセット
-     * @param (_string) 正解の文字番号
-     * @param (_color) 正解の色番号
     */
-    public void SetCorrectAnswer(int _string, int _color)
+    public void SetCorrectAnswer()
     {
+        int _string = IMS.GetCurrentColor();
+        int _color = IMS.GetLetterColor();
         CorrectString = (_string >= 0 && _string < 4) ? (ColorType)_string : ColorType.RED;
         CorrectColor = (_color >= 0 && _color < 4) ? (ColorType)_color : ColorType.RED;
     }
@@ -35,6 +43,9 @@ public class ColorSelector : MonoBehaviour
         ColorType comp = ColorMode ? CorrectColor : CorrectString;
         if (comp == answer) Correct();
         else Wrong();
+
+        IMS.ChangeColor();
+        SetCorrectAnswer();
     }
 
     /*
